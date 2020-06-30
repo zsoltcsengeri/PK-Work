@@ -14,6 +14,12 @@ h1 {
   -webkit-text-stroke: 2px black;
 }
 
+@media (max-width:900px) {
+  h2 {
+    min-width: 100%;
+  }
+}
+
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
@@ -24,10 +30,24 @@ h2 {
   margin-top: 30px;
 }
 
+
+@media (max-width:900px) {
+  h3 {
+    min-width: 100%;
+  }
+}
+
 h3 {
   font-family: 'Montserrat', sans-serif;
   color: #11999e;
   -webkit-text-stroke: 0.5px black;
+}
+
+@media (max-width:900px) {
+  p {
+    min-width: 100%;
+
+  }
 }
 
 p {
@@ -108,6 +128,7 @@ a:hover {
 
 .middle-container {
   margin: 100px 0;
+  width: 100%;
 }
 
 .intro {
@@ -132,10 +153,25 @@ a:hover {
   text-align: center;
 }
 
+@media (max-width:900px) {
+  .IT1 {
+    min-width: 100%;
+    padding-bottom: 100px;
+
+  }
+}
+
 .IT1 {
   width: 20%;
   float: left;
   margin-right: 30px;
+}
+
+@media (max-width:900px) {
+  .IT2 {
+    min-width: 100%;
+    padding-bottom: 100px;
+  }
 }
 
 .IT2 {
@@ -149,13 +185,18 @@ a:hover {
   padding-top: 50px;
 }
 
+@media (max-width: 900px) {
+  .circle-cropped-dark {
+    min-width: 100%;
+  }
+}
+
 .circle-cropped-dark {
   position: relative;
-  width: 30%;
+  width: 25%;
   left: auto;
   bottom: auto;
   padding-bottom: 50px;
-}
 }
 
 /*.Critically {
@@ -168,7 +209,6 @@ a:hover {
 .img-fluid {
   max-width: 100%;
   height: auto;
-
 }
 
 .bottom-cloud {
@@ -188,6 +228,7 @@ a:hover {
   right: auto;
   top: auto;
 }
+
 .contact {
   width: 30%;
   margin: 40px auto 60px;
