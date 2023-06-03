@@ -1,4 +1,0 @@
-rm '.gitignore'
-rm '_config.yml'
-rm 'css/styles.css'
-rm 'index.html'
