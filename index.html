@@ -1,121 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zsolt Csengeri</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zsolt Csengeri</title>
-  <link rel="stylesheet" href="./style.css" />
-</head>
+  <body>
+    <!--Section 1-->
+    <!--*Name, Downloadable CV, Role title, 3 Images (2 cloud and 1 interface images) -->
+    <main>
+      
+        <div class="flex-container">
+          <div class="name"><h1>Zsolt Csengeri</h1></div>
+          <div class="cv-button">
+            <a href="./CV/Zsolt_Resume.pdf" class="btn" target="_blank">CV</a>
+          </div>
+          <div class="role-title">
+            <h2 class="imp-cons">Implementation Consultant</h2>
+          </div>
 
-<body>
-  <!--Section 1-->
-  <!--*Name, Downloadable CV, Role title, 3 Images (2 cloud and 1 interface images) -->
-  <main>
-    <section class="section-1">
-
-      <div class="flex-container">
-
-        <div class="titles-button">
-          <h1>Zsolt Csengeri</h1>
-          <a href="./CV/Zsolt_Resume.pdf" class="btn" target="_blank">CV</a>
-          <h2 class="imp-cons ">Implementation Consultant</h2>
+          <div class="flex-item-1">
+            <img
+              class="left-cloud"
+              src="./images/circle-cropped-cloud.png"
+              alt="cloud"
+            />
+          </div>
+          <div class="flex-item-2">
+            <img
+              class="right-cloud"
+              src="./images/circle-cropped-cloud.png"
+              alt="cloud"
+            />
+          </div>
+          <div class="flex-item-3">
+            <img
+              class="interface"
+              src="./images/interface.png"
+              alt="interface"
+            />
+          </div>
         </div>
+      
 
-          <div class="flex-item-1"><img class="left-cloud" src="./images/circle-cropped-cloud.png" alt="cloud" /></div>
-          <div class="flex-item-2"><img class="right-cloud" src="./images/circle-cropped-cloud.png" alt="cloud" /></div>
-          <div class="flex-item-3"><img class="interface" src="./images/interface.png" alt="interface" /></div>
-
-        
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </section>
-
-    <!--Section 2-->
-    <!--*Image of Me, 'I am' text -->
-    <section id="section-2" class="section-2">
-      <div class="section-2-container">
-        <img class="Zsolt" src="./images/circle-cropped-dark.png" alt="Zsolt" />
-        <h2>I am</h2>
-      </div>
-      <p class="in-charge">
-        In charge of defining, configuring, and testing the solution with
-        proactive liaison with client teams to provide regular updates and
-        reports on project status, outstanding tasks and agreed timelines,
-        while keeping project deliverables on track.
-      </p>
-    </section>
-
-    <!--Section 3-->
-    <!--*2 Circle data images, 'My Skills' text -->
-    <section id="section-3" class="section-3">
-      <h2 class="my-skills">My Skills</h2>
-      <img class="left-circle-img" src="./images/circle-cropped.png" alt="Data Flow" />
-      <div class="section-3-container">
-        <h3 class="strong-it">Strong IT Support-Solution Expertise</h3>
-        <p class="critically">
-          Critically addressing business needs through a client-centric
-          approach with minimum delivery risk and end-to-end management of
-          project priorities and solutions across multi-lingual, geographical
-          domains.
+      <!--Section 2-->
+      <!--*Image of Me, 'I am' text -->
+      <section id="section-2" class="section-2">
+        <div class="section-2-container">
+          <img
+            class="Zsolt"
+            src="./images/circle-cropped-dark.png"
+            alt="Zsolt"
+          />
+          <h2>I am</h2>
+        </div>
+        <p class="in-charge">
+          In charge of defining, configuring, and testing the solution with
+          proactive liaison with client teams to provide regular updates and
+          reports on project status, outstanding tasks and agreed timelines,
+          while keeping project deliverables on track.
         </p>
-        <img src="./images/circle-cropped.png" alt="Data Flow" />
-        <h3>System-level Perspective</h3>
-        <p class="with">
-          With a 'big picture' view, tactfully planning strategic initiatives
-          with robust implementation, engagement, reporting structures and
-          resilient project control that sets the foundation for smarter
-          processes and insights.
-        </p>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <!--Footer-->
-  <!--*'Get in touch' text, Contact email CTA, Social Media Icons-->
-  <footer>
-    <section id="section-4" class="section-4">
-      <div class="section-4-container">
-        <h2>Get In Touch</h2>
-        <h3>
-          If you think I’d be a good fit for your team, drop me a line and
-          let’s meet
-        </h3>
-        <!-- modify this form HTML and place wherever you want your form -->
-        <form action="https://formspree.io/f/xrgvwekp" method="POST">
-          <label>
-            Your email:
-            <input type="email" name="email" placeholder="email" />
-          </label>
-          <label>
-            Your message:
-            <textarea name="message" placeholder="Type your message here"></textarea>
-          </label>
-          <!-- your other form fields go here -->
-          <button type="submit">Send</button>
-        </form>
-        <p>Please find below my availabilities and references.</p>
-        <a href="mailto:zsoltcsengeri@yahoo.com">Zsolt Csengeri Email</a>
-        <a href="https://www.linkedin.com/in/zsolt-csengeri" target="_blank">LinkedIn</a>
-        <a href="https://twitter.com/zsoltcsengeri" target="_blank">Twitter</a>
-        <a href="https://mapp.com" target="_blank">Web Site</a>
-      </div>
-    </section>
-  </footer>
-  <!-- <script src="./script.js"></script> -->
-</body>
+      <!--Section 3-->
+      <!--*2 Circle data images, 'My Skills' text -->
+      <section id="section-3" class="section-3">
+        <h2 class="my-skills">My Skills</h2>
+        <img
+          class="left-circle-img"
+          src="./images/circle-cropped.png"
+          alt="Data Flow"
+        />
+        <div class="section-3-container">
+          <h3 class="strong-it">Strong IT Support-Solution Expertise</h3>
+          <p class="critically">
+            Critically addressing business needs through a client-centric
+            approach with minimum delivery risk and end-to-end management of
+            project priorities and solutions across multi-lingual, geographical
+            domains.
+          </p>
+          <img src="./images/circle-cropped.png" alt="Data Flow" />
+          <h3>System-level Perspective</h3>
+          <p class="with">
+            With a 'big picture' view, tactfully planning strategic initiatives
+            with robust implementation, engagement, reporting structures and
+            resilient project control that sets the foundation for smarter
+            processes and insights.
+          </p>
+        </div>
+      </section>
+    </main>
 
+    <!--Footer-->
+    <!--*'Get in touch' text, Contact email CTA, Social Media Icons-->
+    <footer>
+      <section id="section-4" class="section-4">
+        <div class="section-4-container">
+          <h2>Get In Touch</h2>
+          <h3>
+            If you think I’d be a good fit for your team, drop me a line and
+            let’s meet
+          </h3>
+          <!-- modify this form HTML and place wherever you want your form -->
+          <form action="https://formspree.io/f/xrgvwekp" method="POST">
+            <label>
+              Your email:
+              <input type="email" name="email" placeholder="email" />
+            </label>
+            <label>
+              Your message:
+              <textarea
+                name="message"
+                placeholder="Type your message here"
+              ></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+          </form>
+          <p>Please find below my availabilities and references.</p>
+          <a href="mailto:zsoltcsengeri@yahoo.com">Zsolt Csengeri Email</a>
+          <a href="https://www.linkedin.com/in/zsolt-csengeri" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://twitter.com/zsoltcsengeri" target="_blank"
+            >Twitter</a
+          >
+          <a href="https://mapp.com" target="_blank">Web Site</a>
+        </div>
+      </section>
+    </footer>
+    <!-- <script src="./script.js"></script> -->
+  </body>
 </html>
