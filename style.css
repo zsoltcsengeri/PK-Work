@@ -94,16 +94,27 @@ html {
   .flex-item-1 {
     order: -1;
     margin: auto;
+    padding-bottom: 50px;
+
+    
   }
   .flex-item-2 {
     margin: auto;
+    padding-top: 50px;
   }
   .flex-item-3 {
     margin: auto;
+    padding-top: 50px;
   }
 
   .name {
-    padding-top: 40px;
+    
+  }
+  .cv-button {
+    
+  }
+  .imp-cons {
+    
   }
 }
 
