@@ -4,7 +4,8 @@
   padding: 0;
 }
 
-html {
+html,
+body {
   font-size: 10px;
 }
 
@@ -111,6 +112,7 @@ html {
   .cv-button {
   }
   .imp-cons {
+    font-size: 4.5rem;
   }
 }
 
