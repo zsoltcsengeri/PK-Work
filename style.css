@@ -135,12 +135,13 @@ body {
 
   .flex-item-1 {
     position: absolute;
-    top: 70;
-    left: 0;
-    right: 546;
-    bottom: 445;
+    top: 70px;
+    left: 0px;
+    right: 546px;
+    bottom: 445px;
   }
 }
+
 
 /* Section-2*/
 
