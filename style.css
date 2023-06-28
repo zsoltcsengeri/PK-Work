@@ -87,7 +87,7 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+@media  (max-width: 576px) {
   .flex-container {
     width: fit-content;
   }
@@ -128,10 +128,22 @@ body {
     right: 0;
   }
 }
+@media (min-width: 768px) {
+  .flex-container {
+    position: relative;
+  }
+
+  .flex-item-1 {
+    position: absolute;
+    top: 70;
+    left: 0;
+    right: 546;
+    bottom: 445;
+  }
+}
 
 /* Section-2*/
 
 .Zsolt {
   width: 200px;
 }
-
