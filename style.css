@@ -122,7 +122,7 @@ body {
   }
 }
 
-@media (max-width:768px){
+@media (min-width:768px){
   .flex-container {
     position: relative;
   }
