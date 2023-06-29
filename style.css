@@ -85,6 +85,11 @@ body {
     top: 0;
     left: 0;
   }
+  .flex-item-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 @media  (max-width: 576px) {
@@ -117,30 +122,17 @@ body {
   }
 }
 
-@media (min-width: 576px) {
+@media (max-width:768px){
   .flex-container {
     position: relative;
   }
-
-  .flex-item-2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-@media (min-width: 768px) {
-  .flex-container {
-    position: relative;
-  }
-
   .flex-item-1 {
     position: absolute;
     top: 70px;
-    left: 0px;
-    right: 546px;
-    bottom: 445px;
   }
 }
+
+
 
 
 /* Section-2*/
