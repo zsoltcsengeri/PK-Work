@@ -47,22 +47,26 @@
 
       <!--Section 2-->
       <!--*Image of Me, 'I am' text -->
-      <section id="section-2" class="section-2">
+      
         <div class="section-2-container">
           <img
             class="Zsolt"
             src="./images/circle-cropped-dark.png"
             alt="Zsolt"
           />
-          <h2>I am</h2>
+          <h2 class="I-am">I am</h2>
+        
+        <div class="in-charge">
+          <p>
+            In charge of defining, configuring, and testing the solution with
+            proactive liaison with client teams to provide regular updates and
+            reports on project status, outstanding tasks and agreed timelines,
+            while keeping project deliverables on track.
+          </p>
         </div>
-        <p class="in-charge">
-          In charge of defining, configuring, and testing the solution with
-          proactive liaison with client teams to provide regular updates and
-          reports on project status, outstanding tasks and agreed timelines,
-          while keeping project deliverables on track.
-        </p>
-      </section>
+      </div>
+      
+
 
       <!--Section 3-->
       <!--*2 Circle data images, 'My Skills' text -->
@@ -104,7 +108,7 @@
             let’s meet
           </h3>
           <!-- modify this form HTML and place wherever you want your form -->
-          <form action="https://formspree.io/f/xrgvwekp" method="POST">
+          <form action="http://localhost:3000/process_form" method="POST">
             <label>
               Your email:
               <input type="email" name="email" placeholder="email" />
@@ -132,5 +136,6 @@
       </section>
     </footer>
     <!-- <script src="./script.js"></script> -->
+    <script src="./CV/server.js"></script>
   </body>
 </html>

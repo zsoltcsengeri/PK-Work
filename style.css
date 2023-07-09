@@ -9,8 +9,8 @@ body {
   font-size: 10px;
 }
 
-h1{
-  text-shadow: 0 0 6px whitesmoke;;
+h1 {
+  text-shadow: 0 0 6px whitesmoke;
 }
 
 .imp-cons {
@@ -55,10 +55,8 @@ h1{
 .btn:hover {
   background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
   background-color: #476e9e;
-  color:#18142c;
+  color: #18142c;
   font-weight: 550;
-  
-  
 }
 
 .btn:active {
@@ -71,22 +69,25 @@ h1{
   .flex-item-2 {
     display: none;
   }
+
   .interface {
     width: 150px;
     margin-top: 40px;
   }
+
   .role-title {
-    
     margin-top: 40px;
     margin-bottom: 35px;
-    
   }
+
   .cv-button {
     margin-top: 30px;
   }
+
   .name {
     margin-top: 15px;
   }
+
   .btn {
     width: min-content;
   }
@@ -97,37 +98,42 @@ h1{
     position: relative;
     font-size: 4rem;
   }
+
   .flex-item-1 {
     position: absolute;
     top: 120px;
     left: 30px;
   }
+
   .flex-item-2 {
     position: absolute;
     top: 120px;
     right: 30px;
   }
+
   .left-cloud,
   .right-cloud,
   .interface {
     width: 130px;
   }
+
   .flex-item-3 {
     margin-top: 50px;
     margin-bottom: 15px;
   }
+
   .role-title {
     margin-top: 45px;
   }
+
   .cv-button {
     margin-top: 30px;
   }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .flex-container {
     position: relative;
-    
   }
 
   .flex-item-1 {
@@ -149,10 +155,9 @@ h1{
   }
 }
 
-@media(max-width:992px) {
+@media (max-width: 992px) {
   .flex-container {
     position: relative;
-    
   }
 
   .flex-item-1 {
@@ -174,10 +179,9 @@ h1{
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .flex-container {
     position: relative;
-    
   }
 
   .flex-item-1 {
@@ -197,11 +201,42 @@ h1{
   .interface {
     width: 200px;
   }
-  
 }
 
 /* Section-2*/
 
 .Zsolt {
-  width: 200px;
+  width: 150px;
+}
+
+.section-2-container {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: rgba(12, 160, 218, 0.313);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    Arial;
+}
+
+.in-charge {
+  display: flex;
+  text-align: justify;
+  letter-spacing: normal;
+  margin: 15px;
+  line-height: 1.2;
+}
+
+.I-am {
+  padding-top: 20px;
+}
+
+@media (min-width: 900px) {
+  .Zsolt {
+    width: 200px;
+  }
 }
