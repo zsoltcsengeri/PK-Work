@@ -162,14 +162,14 @@ h1 {
 
   .flex-item-1 {
     position: absolute;
-    top: 110px;
-    left: 80px;
+    top: 120px;
+    left: 60px;
   }
 
   .flex-item-2 {
     position: absolute;
-    top: 110px;
-    right: 80px;
+    top: 120px;
+    right: 60px;
   }
 
   .left-cloud,
@@ -217,16 +217,16 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 600;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
 }
 
 .in-charge {
+  font-size: 3rem;
   display: flex;
-  text-align: justify;
-  letter-spacing: normal;
+  text-align: center;
   margin: 15px;
   line-height: 1.2;
 }
@@ -239,4 +239,72 @@ h1 {
   .Zsolt {
     width: 200px;
   }
+  .in-charge {
+    max-width: 50%;
+    line-height: 1.5;
+    text-align-last: center;
+  }
+}
+
+/* Section-3 */
+
+.section-3-container {
+  background-color: #476e9e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  position: relative;
+}
+.my-skills {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 4.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    Arial;
+  font-weight: 600;
+}
+.flex-2-container {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.left-circle-img {
+  margin-right: 10px; /* Add spacing between the image and texts */
+  width: 100%;
+  margin-left:5px
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column; /* Arrange texts vertically */
+  justify-content: center; /* Align items vertically in the center */
+  margin-right: 15px;
+}
+
+.flex-3-container {
+  display: flex;
+  flex-direction: row-reverse; /* Reverse the order of flex items */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.right-circle-img {
+  margin-left: 10px; /* Add spacing between the image and texts */
+  width: 100%;
+  margin-right: 30px;
+}
+
+.text-container-2 {
+  display: flex;
+  flex-direction: column; /* Arrange texts vertically */
+  justify-content: center; /* Align items vertically in the center */
+  margin-left: 15px;
+}
+
+.system-level,
+.with {
+  flex-grow: 1; /* Allow texts to expand and fill the remaining space */
 }
