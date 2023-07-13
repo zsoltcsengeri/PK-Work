@@ -7,6 +7,7 @@
 html,
 body {
   font-size: 10px;
+  
 }
 
 h1 {
@@ -18,7 +19,7 @@ h1 {
 }
 
 .flex-container {
-  background-color: rgba(12, 160, 218, 1);
+  background-color: #476e9e;
   text-align: center;
   padding-top: 15px;
   font-size: 2.5rem;
@@ -212,23 +213,26 @@ h1 {
 .section-2-container {
   padding-top: 35px;
   padding-bottom: 35px;
-  background-color: rgba(12, 160, 218, 0.313);
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 600;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
 }
 
 .in-charge {
-  font-size: 3rem;
+  font-size: 2.5rem;
   display: flex;
   text-align: center;
   margin: 15px;
   line-height: 1.2;
+  text-align: justify;
+  letter-spacing: 0.025em;
+  text-align-last: center;
 }
 
 .I-am {
@@ -240,7 +244,7 @@ h1 {
     width: 200px;
   }
   .in-charge {
-    max-width: 50%;
+    max-width: 75%;
     line-height: 1.5;
     text-align-last: center;
   }
@@ -253,16 +257,17 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2.5rem;
   flex-direction: column;
   position: relative;
+  padding-bottom: 25px;
 }
 .my-skills {
   margin-top: 15px;
   display: flex;
   align-items: center;
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
   font-weight: 600;
@@ -273,9 +278,11 @@ h1 {
 }
 
 .left-circle-img {
+  display: flex;
   margin-right: 10px; /* Add spacing between the image and texts */
-  width: 100%;
-  margin-left:5px
+  width: 80px;
+  margin-left: 7px;
+  margin-right: 20px;
 }
 
 .text-container {
@@ -293,8 +300,9 @@ h1 {
 
 .right-circle-img {
   margin-left: 10px; /* Add spacing between the image and texts */
-  width: 100%;
-  margin-right: 30px;
+  width: 80px;
+  margin-left: 7px;
+  margin-right: 20px;
 }
 
 .text-container-2 {
@@ -307,4 +315,48 @@ h1 {
 .system-level,
 .with {
   flex-grow: 1; /* Allow texts to expand and fill the remaining space */
+}
+
+.strong-it {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    Arial;
+  font-weight: 600;
+}
+
+.critically {
+  font-size: 1.6rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    Arial;
+  font-weight: 520;
+  text-align: justify;
+  letter-spacing: 0.02em;
+}
+.system-level {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    Arial;
+  font-weight: 600;
+  
+}
+
+.with {
+  font-size: 1.6rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    Arial;
+  font-weight: 520;
+  text-align: justify;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 600px) {
+  .text-container , .text-container-2 {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-container , .text-container-2 {
+    max-width: 60%;
+  }
 }
