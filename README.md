@@ -24,22 +24,20 @@ If you want to deploy the website locally and utilize the form submission featur
 
 Clone the repository:
 
-bash
-Copy code
+
+
 git clone https://github.com/zsoltcsengeri/PK-Work.git
 Navigate to the project directory:
 
-bash
-Copy code
+
+
 cd PK-Work
 Install the required dependencies by running the following command:
 
-Copy code
+
 npm install
 Set up a MySQL database and update the necessary connection details in the Node.js server file (server.js).
 
 Start the Node.js server:
 
-Copy code
-node server.js
-Open the website by accessing index.html in your preferred web browser.
+
