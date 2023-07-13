@@ -7,7 +7,6 @@
 html,
 body {
   font-size: 10px;
-  
 }
 
 h1 {
@@ -207,7 +206,7 @@ h1 {
 /* Section-2*/
 
 .Zsolt {
-  width: 150px;
+  width: 130px;
 }
 
 .section-2-container {
@@ -231,15 +230,29 @@ h1 {
   margin: 15px;
   line-height: 1.2;
   text-align: justify;
-  letter-spacing: 0.025em;
+
   text-align-last: center;
 }
 
 .I-am {
   padding-top: 20px;
+  font-weight: 550;
+  font-size: 3.5rem;
 }
 
 @media (min-width: 900px) {
+  .Zsolt {
+    width: 130px;
+  }
+  .in-charge {
+    max-width: 85%;
+    line-height: 1.5;
+    text-align-last: center;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media (min-width: 1200px) {
   .Zsolt {
     width: 200px;
   }
@@ -247,6 +260,7 @@ h1 {
     max-width: 75%;
     line-height: 1.5;
     text-align-last: center;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -279,10 +293,9 @@ h1 {
 
 .left-circle-img {
   display: flex;
-  margin-right: 10px; /* Add spacing between the image and texts */
+  margin-right: 20px; /* Add spacing between the image and texts */
   width: 80px;
   margin-left: 7px;
-  margin-right: 20px;
 }
 
 .text-container {
@@ -293,6 +306,7 @@ h1 {
 }
 
 .flex-3-container {
+  position: relative;
   display: flex;
   flex-direction: row-reverse; /* Reverse the order of flex items */
   align-items: center; /* Align items vertically in the center */
@@ -325,7 +339,7 @@ h1 {
 }
 
 .critically {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
   font-weight: 520;
@@ -337,11 +351,10 @@ h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
   font-weight: 600;
-  
 }
 
 .with {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
   font-weight: 520;
@@ -350,13 +363,74 @@ h1 {
 }
 
 @media (min-width: 600px) {
-  .text-container , .text-container-2 {
-    max-width: 60%;
+  .text-container,
+  .text-container-2 {
+    max-width: 50%;
   }
 }
 
 @media (min-width: 768px) {
-  .text-container , .text-container-2 {
-    max-width: 60%;
+  .text-container,
+  .text-container-2 {
+    max-width: 50%;
+  }
+
+  .left-circle-img,
+  .right-circle-img {
+    width: 130px;
+  }
+}
+
+@media (min-width: 900px) {
+  .text-container,
+  .text-container-2 {
+    max-width: 50%;
+  }
+  .left-circle-img,
+  .right-circle-img {
+    width: 130px;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-container,
+  .text-container-2 {
+    max-width: 50%;
+  }
+  .left-circle-img,
+  .right-circle-img {
+    width: 130px;
+  }
+}
+@media (min-width: 1200px) {
+  .text-container,
+  .text-container-2 {
+    max-width: 40%;
+  }
+
+  .left-circle-img,
+  .right-circle-img {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .text-container,
+  .text-container-2 {
+    max-width: 40%;
+  }
+
+  .left-circle-img,
+  .right-circle-img {
+    width: 200px;
+  }
+  
+  .strong-it , .system-level, .my-skills
+  {
+    font-size: 4rem;
+  }
+
+  .critically, .with {
+font-size: 3rem;
   }
 }
