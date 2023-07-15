@@ -131,14 +131,14 @@
         <!-- form submission data transfers to a MYSQL DB via a locally hosted server -->
         <form action="http://localhost:3000/process_form" method="POST">
           <div class="info">
-            <input class="fname" type="text" name="name" placeholder="Full name">
-            <input type="text" name="name" placeholder="Email">
-            <input type="text" name="name" placeholder="Phone number">
-            <input type="text" name="name" placeholder="Website">
+            <input class="fname" type="text" name="full_name" placeholder="Full name">
+            <input type="text" name="email" placeholder="Email">
+            <input type="text" name="phone_number" placeholder="Phone number">
+            <input type="text" name="web_site" placeholder="Web Site">
           </div>
           <p class="message">Message</p>
           <div>
-            <textarea rows="4"></textarea>
+            <textarea rows="4" name="message"   placeholder="message..."></textarea >
           </div>
           <button type="submit" href="/">Submit</button>
         </form>

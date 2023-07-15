@@ -18,13 +18,13 @@ const pool = mysql.createPool({
 
 // Create a route to handle the form submission
 app.post('/process_form', (req, res) => {
-  const { email, message } = req.body;
+  const { full_name, email, phone_number, web_site, message } = req.body;
   // Retrieve other form fields if needed
 
   // Execute the SQL statement to insert the form data into the database
-  const sql = 'INSERT INTO contact (email, message) VALUES (?, ?)';
+  const sql = 'INSERT INTO contact (full_name, email, phone_number, web_site, message) VALUES (?, ?, ?, ?, ?)';
   // Add other columns and form fields to the SQL statement if needed
-  pool.query(sql, [email, message], (error, results) => {
+  pool.query(sql, [full_name, email, phone_number, web_site, message], (error, results) => {
     if (error) {
       console.error('Error: ', error);
       res.status(500).send('Internal Server Error');
