@@ -222,6 +222,10 @@ h1 {
   font-weight: 600;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
+  box-shadow: 0 2px 5px #f5f5f5;
+  background: #f5f5f5;
+  margin: 20px;
+  
 }
 
 .in-charge {
@@ -233,6 +237,7 @@ h1 {
   text-align-last: center;
   word-spacing: -0.05em;
   letter-spacing: -0.05em;
+    
 }
 
 
@@ -557,40 +562,40 @@ h1 {
 
 .section-4-container form {
   display: flex;
-  /* Display the form as a flex container */
   flex-direction: column;
-  /* Arrange form elements vertically */
   align-items: center;
-  /* Center form elements horizontally */
+
 }
 
-/* Add margin to input and textarea elements */
+
 .section-4-container input,
 .section-4-container textarea {
   margin-bottom: 10px;
-  /* Add margin at the bottom to create spacing between elements */
+
 }
 
-/* Add margin to the submit button */
+
 .section-4-container button {
   margin-top: 10px;
-  /* Add margin at the top to create spacing between elements */
+
 }
 
-/* Add margin to the anchor tags */
+
 .section-4-container a {
   margin-top: 10px;
-  /* Add margin at the top to create spacing between elements */
+
 }
 
 .get-in-touch {
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding-bottom: 10px;
+  
 }
 
 .if-you-think {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-bottom: 10px;
+  margin: 20px;
 }
 
 label {
@@ -658,7 +663,8 @@ button:hover {
 }
 
 .message {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 545;
 }
 
 .please-find {
@@ -694,7 +700,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
-  
+
 }
 
 .linkedin-link:hover,
@@ -704,4 +710,31 @@ button:hover {
   background-color: #476e9e;
   color: #18142c;
   font-weight: 550;
+}
+@media(min-width:992px){
+  .links {
+    display: flex;
+    justify-content: space-between;
+      }
+}
+@media (min-width:1200px) {
+  .links {
+display: flex;
+justify-content: space-around;
+
+  }
+  .get-in-touch {
+    font-size: 3.5rem;
+  }
+.if-you-think {
+  font-size: 2.5rem;
+}
+.please-find {
+  font-size: 2.5rem;
+}
+.linkedin-link,
+.github-link,
+.website-link {
+  font-size: 2.5rem;
+}
 }
