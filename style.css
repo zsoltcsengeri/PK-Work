@@ -227,15 +227,16 @@ h1 {
 .in-charge {
   font-size: 2.5rem;
   display: flex;
-  text-align: center;
   margin: 15px;
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: justify;
-
   text-align-last: center;
+  word-spacing: -0.05em;
+  letter-spacing: -0.05em;
 }
-
-.I-am {
+  
+  
+  .I-am {
   padding-top: 20px;
   font-weight: 550;
   font-size: 3.5rem;
@@ -351,6 +352,7 @@ h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
   font-weight: 600;
+
 }
 
 .critically {
@@ -359,7 +361,9 @@ h1 {
     Arial;
   font-weight: 520;
   text-align: justify;
-  letter-spacing: 0.02em;
+  word-spacing: -0.05em;
+  letter-spacing: -0.05em;
+  
 }
 
 .system-level {
@@ -367,6 +371,7 @@ h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
   font-weight: 600;
+
 }
 
 .with {
@@ -375,7 +380,8 @@ h1 {
     Arial;
   font-weight: 520;
   text-align: justify;
-  letter-spacing: 0.02em;
+  word-spacing: -0.05em;
+  letter-spacing: -0.05em;
 }
 
 @media (min-width: 600px) {
@@ -664,10 +670,10 @@ button:hover {
 
 .links {
   background-color: #476e9e;
- 
+
   display: flex;
   flex-direction: ;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   align-content: center;
   align-self: center;
@@ -679,7 +685,9 @@ button:hover {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.linkedin-link, .github-link, .website-link {
+.linkedin-link,
+.github-link,
+.website-link {
   font-size: 2rem;
   color: whitesmoke;
   text-decoration: none;
