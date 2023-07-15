@@ -1,0 +1,4 @@
+account.js
+*.orig
+node_modules/
+.DS_Store
