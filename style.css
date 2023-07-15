@@ -234,9 +234,9 @@ h1 {
   word-spacing: -0.05em;
   letter-spacing: -0.05em;
 }
-  
-  
-  .I-am {
+
+
+.I-am {
   padding-top: 20px;
   font-weight: 550;
   font-size: 3.5rem;
@@ -363,7 +363,7 @@ h1 {
   text-align: justify;
   word-spacing: -0.05em;
   letter-spacing: -0.05em;
-  
+
 }
 
 .system-level {
@@ -672,7 +672,6 @@ button:hover {
   background-color: #476e9e;
 
   display: flex;
-  flex-direction: ;
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
@@ -691,4 +690,18 @@ button:hover {
   font-size: 2rem;
   color: whitesmoke;
   text-decoration: none;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.linkedin-link:hover,
+.github-link:hover,
+.website-link:hover {
+
+  background-color: #476e9e;
+  color: #18142c;
+  font-weight: 550;
 }
