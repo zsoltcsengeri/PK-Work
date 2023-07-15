@@ -670,9 +670,8 @@ button:hover {
 
 .links {
   background-color: #476e9e;
-
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
   align-self: center;
@@ -692,9 +691,10 @@ button:hover {
   text-decoration: none;
   display: flex;
   flex-direction: column-reverse;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
+  
 }
 
 .linkedin-link:hover,
