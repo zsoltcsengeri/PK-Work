@@ -65,6 +65,7 @@ h1 {
 }
 
 @media (max-width: 600px) {
+
   .flex-item-1,
   .flex-item-2 {
     display: none;
@@ -244,6 +245,7 @@ h1 {
   .Zsolt {
     width: 130px;
   }
+
   .in-charge {
     max-width: 85%;
     line-height: 1.5;
@@ -256,6 +258,7 @@ h1 {
   .Zsolt {
     width: 200px;
   }
+
   .in-charge {
     max-width: 75%;
     line-height: 1.5;
@@ -276,6 +279,7 @@ h1 {
   position: relative;
   padding-bottom: 25px;
 }
+
 .my-skills {
   margin-top: 15px;
   display: flex;
@@ -286,34 +290,42 @@ h1 {
     Arial;
   font-weight: 600;
 }
+
 .flex-2-container {
   display: flex;
-  align-items: center; /* Align items vertically in the center */
+  align-items: center;
+  /* Align items vertically in the center */
 }
 
 .left-circle-img {
   display: flex;
-  margin-right: 20px; /* Add spacing between the image and texts */
+  margin-right: 20px;
+  /* Add spacing between the image and texts */
   width: 80px;
   margin-left: 7px;
 }
 
 .text-container {
   display: flex;
-  flex-direction: column; /* Arrange texts vertically */
-  justify-content: center; /* Align items vertically in the center */
+  flex-direction: column;
+  /* Arrange texts vertically */
+  justify-content: center;
+  /* Align items vertically in the center */
   margin-right: 15px;
 }
 
 .flex-3-container {
   position: relative;
   display: flex;
-  flex-direction: row-reverse; /* Reverse the order of flex items */
-  align-items: center; /* Align items vertically in the center */
+  flex-direction: row-reverse;
+  /* Reverse the order of flex items */
+  align-items: center;
+  /* Align items vertically in the center */
 }
 
 .right-circle-img {
-  margin-left: 10px; /* Add spacing between the image and texts */
+  margin-left: 10px;
+  /* Add spacing between the image and texts */
   width: 80px;
   margin-left: 7px;
   margin-right: 20px;
@@ -321,14 +333,17 @@ h1 {
 
 .text-container-2 {
   display: flex;
-  flex-direction: column; /* Arrange texts vertically */
-  justify-content: center; /* Align items vertically in the center */
+  flex-direction: column;
+  /* Arrange texts vertically */
+  justify-content: center;
+  /* Align items vertically in the center */
   margin-left: 15px;
 }
 
 .system-level,
 .with {
-  flex-grow: 1; /* Allow texts to expand and fill the remaining space */
+  flex-grow: 1;
+  /* Allow texts to expand and fill the remaining space */
 }
 
 .strong-it {
@@ -346,6 +361,7 @@ h1 {
   text-align: justify;
   letter-spacing: 0.02em;
 }
+
 .system-level {
   font-size: 2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
@@ -363,15 +379,18 @@ h1 {
 }
 
 @media (min-width: 600px) {
+
   .text-container,
   .text-container-2 {
     max-width: 65%;
   }
+
   .in-charge,
   .strong-it,
   .system-level {
     font-size: 2.5rem;
   }
+
   .critically,
   .with {
     font-size: 2rem;
@@ -379,6 +398,7 @@ h1 {
 }
 
 @media (min-width: 768px) {
+
   .text-container,
   .text-container-2 {
     max-width: 60%;
@@ -389,10 +409,12 @@ h1 {
   .system-level {
     font-size: 2.5rem;
   }
+
   .critically,
   .with {
     font-size: 2rem;
   }
+
   .left-circle-img,
   .right-circle-img {
     width: 130px;
@@ -400,10 +422,12 @@ h1 {
 }
 
 @media (min-width: 900px) {
+
   .text-container,
   .text-container-2 {
     max-width: 50%;
   }
+
   .left-circle-img,
   .right-circle-img {
     width: 130px;
@@ -411,19 +435,23 @@ h1 {
 }
 
 @media (min-width: 992px) {
+
   .text-container,
   .text-container-2 {
     max-width: 40%;
   }
+
   .left-circle-img,
   .right-circle-img {
     width: 130px;
   }
+
   .strong-it,
   .system-level,
   .my-skills {
     font-size: 3rem;
   }
+
   .my-skills,
   .I-am {
     font-size: 3.5rem;
@@ -435,7 +463,9 @@ h1 {
     font-size: 2.5rem;
   }
 }
+
 @media (min-width: 1200px) {
+
   .text-container,
   .text-container-2 {
     max-width: 40%;
@@ -445,11 +475,13 @@ h1 {
   .right-circle-img {
     width: 200px;
   }
+
   .strong-it,
   .system-level,
   .my-skills {
     font-size: 3rem;
   }
+
   .my-skills,
   .I-am {
     font-size: 3.5rem;
@@ -463,6 +495,7 @@ h1 {
 }
 
 @media (min-width: 1900px) {
+
   .text-container,
   .text-container-2 {
     max-width: 35%;
@@ -484,6 +517,7 @@ h1 {
   .in-charge {
     font-size: 3rem;
   }
+
   .I-am,
   .my-skills {
     font-size: 4rem;
@@ -494,32 +528,159 @@ h1 {
 
 /* Apply flexbox to the container */
 .section-4-container {
-  display: flex; /* Display the container as a flex container */
-  flex-direction: column; /* Arrange flex items vertically */
-  align-items: center; /* Center flex items horizontally */
-  justify-content: center; /* Center flex items vertically */
-  text-align: center; /* Center align text within the container */
+  display: flex;
+  /* Display the container as a flex container */
+  flex-direction: column;
+  /* Arrange flex items vertically */
+  align-items: center;
+  /* Center flex items horizontally */
+  justify-content: center;
+  /* Center flex items vertically */
+  text-align: center;
+  /* Center align text within the container */
+  margin-top: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /* Apply flexbox to the form */
+
+
+
+
+}
+
 .section-4-container form {
-  display: flex; /* Display the form as a flex container */
-  flex-direction: column; /* Arrange form elements vertically */
-  align-items: center; /* Center form elements horizontally */
+  display: flex;
+  /* Display the form as a flex container */
+  flex-direction: column;
+  /* Arrange form elements vertically */
+  align-items: center;
+  /* Center form elements horizontally */
 }
 
 /* Add margin to input and textarea elements */
 .section-4-container input,
 .section-4-container textarea {
-  margin-bottom: 10px; /* Add margin at the bottom to create spacing between elements */
+  margin-bottom: 10px;
+  /* Add margin at the bottom to create spacing between elements */
 }
 
 /* Add margin to the submit button */
 .section-4-container button {
-  margin-top: 10px; /* Add margin at the top to create spacing between elements */
+  margin-top: 10px;
+  /* Add margin at the top to create spacing between elements */
 }
 
 /* Add margin to the anchor tags */
 .section-4-container a {
-  margin-top: 10px; /* Add margin at the top to create spacing between elements */
+  margin-top: 10px;
+  /* Add margin at the top to create spacing between elements */
+}
+
+.get-in-touch {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+
+.if-you-think {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+label {
+  font-size: 2rem;
+
+}
+
+/* Adjust alignment of form elements */
+
+.main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1c87c9;
+}
+
+form {
+  padding: 25px;
+  margin: 25px;
+  box-shadow: 0 2px 5px #f5f5f5;
+  background: #f5f5f5;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 2px solid #7892c2;
+  outline: none;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: #666;
+}
+
+button {
+  box-shadow: 0px 0px 0px 2px #18142c;
+  background: linear-gradient(to bottom, #7892c2 5%, #253f50 100%);
+  background-color: #7892c2;
+  border-radius: 10px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  color: whitesmoke;
+  font-weight: 500;
+  font-family: Arial;
+  font-size: 2.5rem;
+  padding: 12px 37px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #283966;
+  margin-top: 25px;
+  width: 100%;
+
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+  color: #18142c;
+  font-weight: 550;
+}
+
+.message {
+  font-size: 2rem;
+}
+
+.please-find {
+  font-size: 2rem;
+  font-weight: 550;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.links {
+  background-color: #476e9e;
+ 
+  display: flex;
+  flex-direction: ;
+  justify-content:space-evenly;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  color: #18142c;
+  font-size: 2rem;
+  gap: 2px;
+  margin-top: 20px;
+  padding: 20px 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.linkedin-link, .github-link, .website-link {
+  font-size: 2rem;
+  color: whitesmoke;
+  text-decoration: none;
 }
