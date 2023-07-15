@@ -203,7 +203,7 @@ h1 {
   }
 }
 
-/* Section-2*/
+/* ----Section-2---- */
 
 .Zsolt {
   width: 130px;
@@ -264,7 +264,7 @@ h1 {
   }
 }
 
-/* Section-3 */
+/* ----Section-3---- */
 
 .section-3-container {
   background-color: #476e9e;
@@ -365,16 +365,34 @@ h1 {
 @media (min-width: 600px) {
   .text-container,
   .text-container-2 {
-    max-width: 50%;
+    max-width: 65%;
+  }
+  .in-charge,
+  .strong-it,
+  .system-level {
+    font-size: 2.5rem;
+  }
+  .critically,
+  .with {
+    font-size: 2rem;
   }
 }
 
 @media (min-width: 768px) {
   .text-container,
   .text-container-2 {
-    max-width: 50%;
+    max-width: 60%;
   }
 
+  .in-charge,
+  .strong-it,
+  .system-level {
+    font-size: 2.5rem;
+  }
+  .critically,
+  .with {
+    font-size: 2rem;
+  }
   .left-circle-img,
   .right-circle-img {
     width: 130px;
@@ -395,11 +413,26 @@ h1 {
 @media (min-width: 992px) {
   .text-container,
   .text-container-2 {
-    max-width: 50%;
+    max-width: 40%;
   }
   .left-circle-img,
   .right-circle-img {
     width: 130px;
+  }
+  .strong-it,
+  .system-level,
+  .my-skills {
+    font-size: 3rem;
+  }
+  .my-skills,
+  .I-am {
+    font-size: 3.5rem;
+  }
+
+  .critically,
+  .with,
+  .in-charge {
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 1200px) {
@@ -412,25 +445,81 @@ h1 {
   .right-circle-img {
     width: 200px;
   }
+  .strong-it,
+  .system-level,
+  .my-skills {
+    font-size: 3rem;
+  }
+  .my-skills,
+  .I-am {
+    font-size: 3.5rem;
+  }
+
+  .critically,
+  .with,
+  .in-charge {
+    font-size: 2.5rem;
+  }
 }
 
 @media (min-width: 1900px) {
   .text-container,
   .text-container-2 {
-    max-width: 40%;
+    max-width: 35%;
   }
 
   .left-circle-img,
   .right-circle-img {
     width: 200px;
   }
-  
-  .strong-it , .system-level, .my-skills
-  {
-    font-size: 4rem;
+
+  .strong-it,
+  .system-level,
+  .my-skills {
+    font-size: 3.5rem;
   }
 
-  .critically, .with {
-font-size: 3rem;
+  .critically,
+  .with,
+  .in-charge {
+    font-size: 3rem;
   }
+  .I-am,
+  .my-skills {
+    font-size: 4rem;
+  }
+}
+
+/*-----Section-4-----*/
+
+/* Apply flexbox to the container */
+.section-4-container {
+  display: flex; /* Display the container as a flex container */
+  flex-direction: column; /* Arrange flex items vertically */
+  align-items: center; /* Center flex items horizontally */
+  justify-content: center; /* Center flex items vertically */
+  text-align: center; /* Center align text within the container */
+}
+
+/* Apply flexbox to the form */
+.section-4-container form {
+  display: flex; /* Display the form as a flex container */
+  flex-direction: column; /* Arrange form elements vertically */
+  align-items: center; /* Center form elements horizontally */
+}
+
+/* Add margin to input and textarea elements */
+.section-4-container input,
+.section-4-container textarea {
+  margin-bottom: 10px; /* Add margin at the bottom to create spacing between elements */
+}
+
+/* Add margin to the submit button */
+.section-4-container button {
+  margin-top: 10px; /* Add margin at the top to create spacing between elements */
+}
+
+/* Add margin to the anchor tags */
+.section-4-container a {
+  margin-top: 10px; /* Add margin at the top to create spacing between elements */
 }
