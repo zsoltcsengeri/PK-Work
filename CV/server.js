@@ -4,6 +4,7 @@ const mysql = require('mysql');
 const app = express();
 const port = 3000;
 
+
 // Configure body-parser middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -18,8 +19,15 @@ const pool = mysql.createPool({
 
 // Create a route to handle the form submission
 app.post('/process_form', (req, res) => {
-  const { full_name, email, phone_number, web_site, message } = req.body;
-  // Retrieve other form fields if needed
+  const { full_name, email, phone_number, web_site, message } = req.body; // Retrieve other form fields if needed
+  const terms = req.body.terms;
+  
+  
+  // Check if terms are accepted
+  if (!terms) {
+    return res.status(400).send('Please accept the terms and conditions.');
+  }
+
 
   // Execute the SQL statement to insert the form data into the database
   const sql = 'INSERT INTO contact (full_name, email, phone_number, web_site, message) VALUES (?, ?, ?, ?, ?)';

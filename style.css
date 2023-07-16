@@ -65,7 +65,6 @@ h1 {
 }
 
 @media (max-width: 600px) {
-
   .flex-item-1,
   .flex-item-2 {
     display: none;
@@ -225,7 +224,6 @@ h1 {
   box-shadow: 0 2px 5px #f5f5f5;
   background: #f5f5f5;
   margin: 20px;
-  
 }
 
 .in-charge {
@@ -237,9 +235,7 @@ h1 {
   text-align-last: center;
   word-spacing: -0.05em;
   letter-spacing: -0.05em;
-    
 }
-
 
 .I-am {
   padding-top: 20px;
@@ -300,7 +296,6 @@ h1 {
 .flex-2-container {
   display: flex;
   align-items: center;
-  
 }
 
 .left-circle-img {
@@ -322,13 +317,10 @@ h1 {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  
-  
 }
 
 .right-circle-img {
   margin-left: 10px;
-  /* Add spacing between the image and texts */
   width: 80px;
   margin-left: 7px;
   margin-right: 20px;
@@ -339,13 +331,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   margin-left: 15px;
-  
-}
-
-.system-level,
-.with {
-  flex-grow: 1;
-  /* Allow texts to expand and fill the remaining space */
 }
 
 .strong-it {
@@ -353,7 +338,6 @@ h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
   font-weight: 600;
-
 }
 
 .critically {
@@ -364,7 +348,6 @@ h1 {
   text-align: justify;
   word-spacing: -0.05em;
   letter-spacing: -0.05em;
-
 }
 
 .system-level {
@@ -372,7 +355,6 @@ h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
   font-weight: 600;
-
 }
 
 .with {
@@ -386,7 +368,6 @@ h1 {
 }
 
 @media (min-width: 600px) {
-
   .text-container,
   .text-container-2 {
     max-width: 65%;
@@ -405,7 +386,6 @@ h1 {
 }
 
 @media (min-width: 768px) {
-
   .text-container,
   .text-container-2 {
     max-width: 60%;
@@ -429,7 +409,6 @@ h1 {
 }
 
 @media (min-width: 900px) {
-
   .text-container,
   .text-container-2 {
     max-width: 50%;
@@ -442,7 +421,6 @@ h1 {
 }
 
 @media (min-width: 992px) {
-
   .text-container,
   .text-container-2 {
     max-width: 40%;
@@ -475,9 +453,9 @@ h1 {
   .flex-2-container {
     margin-left: 20px;
   }
+
   .flex-3-container {
     margin-right: 20px;
-    
   }
 
   .text-container,
@@ -509,7 +487,6 @@ h1 {
 }
 
 @media (min-width: 1900px) {
-
   .text-container,
   .text-container-2 {
     max-width: 35%;
@@ -540,59 +517,38 @@ h1 {
 
 /*-----Section-4-----*/
 
-/* Apply flexbox to the container */
 .section-4-container {
   display: flex;
-  /* Display the container as a flex container */
   flex-direction: column;
-  /* Arrange flex items vertically */
   align-items: center;
-  /* Center flex items horizontally */
   justify-content: center;
-  /* Center flex items vertically */
   text-align: center;
-  /* Center align text within the container */
   margin-top: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-/* Apply flexbox to the form */
-
-
-
-
 }
 
 .section-4-container form {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
-
 
 .section-4-container input,
 .section-4-container textarea {
   margin-bottom: 10px;
-
 }
-
 
 .section-4-container button {
   margin-top: 10px;
-
 }
-
 
 .section-4-container a {
   margin-top: 10px;
-
 }
 
 .get-in-touch {
   font-size: 3rem;
   padding-bottom: 10px;
-  
 }
 
 .if-you-think {
@@ -603,7 +559,6 @@ h1 {
 
 label {
   font-size: 2rem;
-
 }
 
 /* Adjust alignment of form elements */
@@ -655,7 +610,6 @@ button {
   text-shadow: 0px 1px 0px #283966;
   margin-top: 25px;
   width: 100%;
-
 }
 
 button:hover {
@@ -674,7 +628,7 @@ button:hover {
   font-size: 2rem;
   font-weight: 550;
   text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .links {
@@ -689,7 +643,8 @@ button:hover {
   gap: 2px;
   margin-top: 20px;
   padding: 20px 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .linkedin-link,
@@ -703,44 +658,72 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
-
 }
 
 .linkedin-link:hover,
 .github-link:hover,
 .website-link:hover {
-
   background-color: #476e9e;
   color: #18142c;
   font-weight: 550;
 }
-@media(min-width:992px){
+
+.accept {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+  padding-top: 15px;
+}
+
+.accept a {
+  display: inline-block;
+  text-decoration: none;
+  color: #18142c;
+  transition: color 0.2s ease;
+  outline: none;
+}
+
+.a-accept:hover {
+  color: #18142c;
+  font-weight: 550;
+}
+
+input[type="checkbox"] {
+  transform: scale(2);
+}
+
+@media (min-width: 992px) {
   .links {
     display: flex;
     justify-content: space-between;
-      }
-}
-@media (min-width:1200px) {
-  .links {
-display: flex;
-justify-content: space-around;
-
   }
+}
+
+@media (min-width: 1200px) {
+  .links {
+    display: flex;
+    justify-content: space-around;
+  }
+
   .get-in-touch {
     font-size: 3.5rem;
   }
-.if-you-think {
-  font-size: 2.5rem;
-}
-.please-find {
-  font-size: 2.5rem;
-}
-.linkedin-link,
-.github-link,
-.website-link {
-  font-size: 2.5rem;
-}
-.text-container-2 {
-  margin-right: 10px;
-}
+
+  .if-you-think {
+    font-size: 2.5rem;
+  }
+
+  .please-find {
+    font-size: 2.5rem;
+  }
+
+  .linkedin-link,
+  .github-link,
+  .website-link {
+    font-size: 2.5rem;
+  }
+
+  .text-container-2 {
+    margin-right: 10px;
+  }
 }
