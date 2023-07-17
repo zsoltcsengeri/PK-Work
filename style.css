@@ -569,7 +569,7 @@ label {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #1c87c9;
+  
 }
 
 form {
@@ -585,14 +585,15 @@ textarea {
   padding: 8px;
   margin-bottom: 20px;
   border: 2px solid #7892c2;
-  outline: none;
   border-radius: 10px;
 }
 
 input::placeholder {
   color: #666;
 }
-
+.text{
+  width: 100%;
+}
 button {
   box-shadow: 0px 0px 0px 2px #18142c;
   background: linear-gradient(to bottom, #7892c2 5%, #253f50 100%);

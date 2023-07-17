@@ -138,39 +138,45 @@
             If you think I’d be a good fit for your team, drop me a line and
             let’s meet
           </h3>
-          <!-- form submission data transfers to a MYSQL DB via a locally hosted server -->
-          <form action="http://localhost:3000/process_form" method="POST">
-            <div class="info">
-              <input
-                class="fname"
-                type="text"
-                name="full_name"
-                placeholder="Full name"
-              />
-              <input type="text" name="email" placeholder="Email" />
-              <input
-                type="text"
-                name="phone_number"
-                placeholder="Phone number"
-              />
-              <input type="text" name="web_site" placeholder="Web Site" />
+          <div class="main-block">
+            <!-- form submission data transfers to a MYSQL DB via a locally hosted server -->
+            <form action="http://localhost:3000/process_form" method="POST">
+              <div class="info">
+                <input
+                  class="fname"
+                  type="text"
+                  name="full_name"
+                  placeholder="Full name"
+                />
+                <input type="text" name="email" placeholder="Email" />
+                <input
+                  type="text"
+                  name="phone_number"
+                  placeholder="Phone number"
+                />
+                <input type="text" name="web_site" placeholder="Web Site" />
+              </div>
+              <p class="message">Message</p>
+              <div class="text">
+                <textarea
+                  rows="4"
+                  name="message"
+                  placeholder="message..."
+                ></textarea>
+              </div>
+              <button type="submit">Submit</button>
+              <label class="accept">
+                <input type="checkbox" name="terms" required />
+                <a
+                  class="a-accept"
+                  href="./terms_conditions.html"
+                  target="_blank"
+                  >I accept the terms and conditions</a
+                >
+              </label>
             </div>
-            <p class="message">Message</p>
-            <div>
-              <textarea
-                rows="4"
-                name="message"
-                placeholder="message..."
-              ></textarea>
-            </div>
-            <button type="submit" href="/">Submit</button>
-            <label class="accept">
-              <input type="checkbox" name="terms" required />
-              <a class="a-accept" href="./terms_conditions.html" target="_blank"
-                >I accept the terms and conditions</a
-              >
-            </label>
-          </form>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -195,7 +201,7 @@
         ></a>
       </div>
     </footer>
-    <!--<script src="./script.js"></script>-->
+    <script src="./script.js"></script>
     <script src="./CV/server.js"></script>
   </body>
 </html>
