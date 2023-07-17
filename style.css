@@ -296,11 +296,16 @@ h1 {
 .flex-2-container {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
+=======
+  /* Align items vertically in the center */
+>>>>>>> parent of 8c1c64a (breakpoint amendments to section 3)
 }
 
 .left-circle-img {
   display: flex;
   margin-right: 20px;
+  /* Add spacing between the image and texts */
   width: 80px;
   margin-left: 7px;
 }
@@ -308,7 +313,9 @@ h1 {
 .text-container {
   display: flex;
   flex-direction: column;
+  /* Arrange texts vertically */
   justify-content: center;
+  /* Align items vertically in the center */
   margin-right: 15px;
 }
 
@@ -316,7 +323,12 @@ h1 {
   position: relative;
   display: flex;
   flex-direction: row-reverse;
+  /* Reverse the order of flex items */
   align-items: center;
+<<<<<<< HEAD
+=======
+  /* Align items vertically in the center */
+>>>>>>> parent of 8c1c64a (breakpoint amendments to section 3)
 }
 
 .right-circle-img {
@@ -329,8 +341,19 @@ h1 {
 .text-container-2 {
   display: flex;
   flex-direction: column;
+  /* Arrange texts vertically */
   justify-content: center;
+  /* Align items vertically in the center */
   margin-left: 15px;
+<<<<<<< HEAD
+=======
+}
+
+.system-level,
+.with {
+  flex-grow: 1;
+  /* Allow texts to expand and fill the remaining space */
+>>>>>>> parent of 8c1c64a (breakpoint amendments to section 3)
 }
 
 .strong-it {
@@ -450,6 +473,7 @@ h1 {
 }
 
 @media (min-width: 1200px) {
+<<<<<<< HEAD
   .flex-2-container {
     margin-left: 20px;
   }
@@ -457,6 +481,8 @@ h1 {
   .flex-3-container {
     margin-right: 20px;
   }
+=======
+>>>>>>> parent of 8c1c64a (breakpoint amendments to section 3)
 
   .text-container,
   .text-container-2 {
@@ -732,3 +758,15 @@ input[type="checkbox"] {
     margin-right: 10px;
   }
 }
+<<<<<<< HEAD
+=======
+.please-find {
+  font-size: 2.5rem;
+}
+.linkedin-link,
+.github-link,
+.website-link {
+  font-size: 2.5rem;
+}
+}
+>>>>>>> parent of 8c1c64a (breakpoint amendments to section 3)
