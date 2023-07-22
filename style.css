@@ -218,7 +218,7 @@ h1 {
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  font-weight: 600;
+  
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
   padding: 25px;
@@ -236,6 +236,7 @@ h1 {
   text-align-last: center;
   word-spacing: -0.01em;
   letter-spacing: -0.01em;
+  font-weight: 540;
 }
 
 .I-am {
@@ -351,10 +352,10 @@ h1 {
   font-size: 1.8rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
-  font-weight: 520;
+  font-weight: 540;
   text-align: justify;
-  word-spacing: -0.05em;
-  letter-spacing: -0.05em;
+  word-spacing: -0.01em;
+  letter-spacing: -0.01em;
 }
 
 .system-level {
@@ -369,10 +370,10 @@ h1 {
   font-size: 1.8rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
-  font-weight: 520;
+  font-weight: 540;
   text-align: justify;
-  word-spacing: -0.05em;
-  letter-spacing: -0.05em;
+  word-spacing: -0.01em;
+  letter-spacing: -0.01em;
 }
 
 @media (min-width: 600px) {
