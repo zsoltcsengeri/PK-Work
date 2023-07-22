@@ -221,9 +221,6 @@ h1 {
   font-weight: 600;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
-  box-shadow: 0 2px 5px #f5f5f5;
-  background: #f5f5f5;
-  margin: 20px;
 }
 
 .in-charge {
@@ -555,21 +552,30 @@ h1 {
 
 .section-4-container form {
   display: flex;
+  /* Display the form as a flex container */
   flex-direction: column;
+  /* Arrange form elements vertically */
   align-items: center;
+  /* Center form elements horizontally */
 }
 
+/* Add margin to input and textarea elements */
 .section-4-container input,
 .section-4-container textarea {
   margin-bottom: 10px;
+  /* Add margin at the bottom to create spacing between elements */
 }
 
+/* Add margin to the submit button */
 .section-4-container button {
   margin-top: 10px;
+
 }
+
 
 .section-4-container a {
   margin-top: 10px;
+
 }
 
 .get-in {
@@ -578,13 +584,13 @@ h1 {
   justify-content: space-evenly;
 }
 .get-in-touch {
-  font-size: 3rem;
-  padding-top: 20px;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
 }
 
 .if-you-think {
-  font-size: 2.5rem;
-  margin: 20px;
+  font-size: 2rem;
+  padding-bottom: 10px;
 }
 
 label {
@@ -651,8 +657,7 @@ button:hover {
 }
 
 .message {
-  font-size: 2.5rem;
-  font-weight: 545;
+  font-size: 2rem;
 }
 
 .please-find {
@@ -689,6 +694,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
+  
 }
 
 .linkedin-link:hover,
@@ -698,75 +704,3 @@ button:hover {
   color: #18142c;
   font-weight: 550;
 }
-
-.accept {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 2rem;
-  padding-top: 15px;
-}
-
-.accept a {
-  display: inline-block;
-  text-decoration: none;
-  color: #18142c;
-  transition: color 0.2s ease;
-  outline: none;
-}
-
-.a-accept:hover {
-  color: #18142c;
-  font-weight: 550;
-}
-
-input[type="checkbox"] {
-  transform: scale(2);
-}
-
-@media (min-width: 992px) {
-  .links {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: 1200px) {
-  .links {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .get-in-touch {
-    font-size: 3.5rem;
-  }
-
-  .if-you-think {
-    font-size: 2.5rem;
-  }
-
-  .please-find {
-    font-size: 2.5rem;
-  }
-
-  .linkedin-link,
-  .github-link,
-  .website-link {
-    font-size: 2.5rem;
-  }
-
-  .text-container-2 {
-    margin-right: 10px;
-  }
-}
-<<<<<<< HEAD
-=======
-.please-find {
-  font-size: 2.5rem;
-}
-.linkedin-link,
-.github-link,
-.website-link {
-  font-size: 2.5rem;
-}
-}
->>>>>>> parent of 8c1c64a (breakpoint amendments to section 3)

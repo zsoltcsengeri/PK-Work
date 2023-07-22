@@ -2,5 +2,15 @@
     "cSpell.words": [
         "Csengeri",
         "Zsolt"
+    ],
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "html",
+        "css"
     ]
 }
