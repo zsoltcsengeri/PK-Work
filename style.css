@@ -221,17 +221,24 @@ h1 {
   font-weight: 600;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
+       padding: 25px;
+  margin: 25px;
+  box-shadow: 0 2px 5px #f5f5f5;
+  background: #f5f5f5;
+ 
 }
 
+
 .in-charge {
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: flex;
   margin: 15px;
-  line-height: 1.4;
+  line-height: 1.5;
   text-align: justify;
   text-align-last: center;
-  word-spacing: -0.05em;
-  letter-spacing: -0.05em;
+  word-spacing: -0.01em;
+  letter-spacing: -0.01em;
+  
 }
 
 .I-am {
@@ -293,10 +300,7 @@ h1 {
 .flex-2-container {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
-=======
   /* Align items vertically in the center */
->>>>>>> parent of 8c1c64a (breakpoint amendments to section 3)
 }
 
 .left-circle-img {
@@ -322,10 +326,7 @@ h1 {
   flex-direction: row-reverse;
   /* Reverse the order of flex items */
   align-items: center;
-<<<<<<< HEAD
-=======
   /* Align items vertically in the center */
->>>>>>> parent of 8c1c64a (breakpoint amendments to section 3)
 }
 
 .right-circle-img {
@@ -342,15 +343,12 @@ h1 {
   justify-content: center;
   /* Align items vertically in the center */
   margin-left: 15px;
-<<<<<<< HEAD
-=======
 }
 
 .system-level,
 .with {
   flex-grow: 1;
   /* Allow texts to expand and fill the remaining space */
->>>>>>> parent of 8c1c64a (breakpoint amendments to section 3)
 }
 
 .strong-it {
@@ -358,10 +356,11 @@ h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
   font-weight: 600;
+  padding-bottom: 5px;
 }
 
 .critically {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
   font-weight: 520;
@@ -375,10 +374,11 @@ h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
   font-weight: 600;
+  padding-bottom: 5px;
 }
 
 .with {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
   font-weight: 520;
@@ -470,7 +470,6 @@ h1 {
 }
 
 @media (min-width: 1200px) {
-<<<<<<< HEAD
   .flex-2-container {
     margin-left: 20px;
   }
@@ -478,8 +477,6 @@ h1 {
   .flex-3-container {
     margin-right: 20px;
   }
-=======
->>>>>>> parent of 8c1c64a (breakpoint amendments to section 3)
 
   .text-container,
   .text-container-2 {
@@ -604,8 +601,8 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding-bottom: 30px;
+  min-height: 80vh;
+   
 }
 
 form {
@@ -659,6 +656,33 @@ button:hover {
 .message {
   font-size: 2rem;
 }
+.accept {
+  display:flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  padding-top: 15px;
+}
+.a-accept {
+  text-decoration: none;
+  color: #18142c;
+  
+}
+
+.a-accept:hover {
+  background-color:whitesmoke;
+  color: #18142c;
+  font-weight: 550;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  
+}
+
+
+
 
 .please-find {
   font-size: 2rem;
