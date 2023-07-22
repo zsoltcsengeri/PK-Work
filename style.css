@@ -43,7 +43,7 @@ h1 {
   cursor: pointer;
   color: whitesmoke;
   font-weight: 500;
-  font-family: Arial;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 2.5rem;
   padding: 12px 37px;
   text-decoration: none;
@@ -221,13 +221,11 @@ h1 {
   font-weight: 600;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
     Arial;
-       padding: 25px;
+  padding: 25px;
   margin: 25px;
   box-shadow: 0 2px 5px #f5f5f5;
   background: #f5f5f5;
- 
 }
-
 
 .in-charge {
   font-size: 2rem;
@@ -238,7 +236,6 @@ h1 {
   text-align-last: center;
   word-spacing: -0.01em;
   letter-spacing: -0.01em;
-  
 }
 
 .I-am {
@@ -300,13 +297,11 @@ h1 {
 .flex-2-container {
   display: flex;
   align-items: center;
-  /* Align items vertically in the center */
 }
 
 .left-circle-img {
   display: flex;
   margin-right: 20px;
-  /* Add spacing between the image and texts */
   width: 80px;
   margin-left: 7px;
 }
@@ -314,9 +309,7 @@ h1 {
 .text-container {
   display: flex;
   flex-direction: column;
-  /* Arrange texts vertically */
   justify-content: center;
-  /* Align items vertically in the center */
   margin-right: 15px;
 }
 
@@ -324,9 +317,7 @@ h1 {
   position: relative;
   display: flex;
   flex-direction: row-reverse;
-  /* Reverse the order of flex items */
   align-items: center;
-  /* Align items vertically in the center */
 }
 
 .right-circle-img {
@@ -339,16 +330,13 @@ h1 {
 .text-container-2 {
   display: flex;
   flex-direction: column;
-  /* Arrange texts vertically */
   justify-content: center;
-  /* Align items vertically in the center */
   margin-left: 15px;
 }
 
 .system-level,
 .with {
   flex-grow: 1;
-  /* Allow texts to expand and fill the remaining space */
 }
 
 .strong-it {
@@ -549,30 +537,21 @@ h1 {
 
 .section-4-container form {
   display: flex;
-  /* Display the form as a flex container */
   flex-direction: column;
-  /* Arrange form elements vertically */
   align-items: center;
-  /* Center form elements horizontally */
 }
 
-/* Add margin to input and textarea elements */
 .section-4-container input,
 .section-4-container textarea {
   margin-bottom: 10px;
-  /* Add margin at the bottom to create spacing between elements */
 }
 
-/* Add margin to the submit button */
-.section-4-container button {
+.section-4-container {
   margin-top: 10px;
-
 }
-
 
 .section-4-container a {
   margin-top: 10px;
-
 }
 
 .get-in {
@@ -602,7 +581,6 @@ label {
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-   
 }
 
 form {
@@ -627,7 +605,7 @@ input::placeholder {
 .text {
   width: 100%;
 }
-button {
+.btn-low {
   box-shadow: 0px 0px 0px 2px #18142c;
   background: linear-gradient(to bottom, #7892c2 5%, #253f50 100%);
   background-color: #7892c2;
@@ -637,16 +615,16 @@ button {
   cursor: pointer;
   color: whitesmoke;
   font-weight: 500;
-  font-family: Arial;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 2.5rem;
   padding: 12px 37px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #283966;
-  margin-top: 25px;
+  margin-top: 20px;
   width: 100%;
 }
 
-button:hover {
+.btn-low:hover {
   background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
   background-color: #476e9e;
   color: #18142c;
@@ -657,7 +635,7 @@ button:hover {
   font-size: 2rem;
 }
 .accept {
-  display:flex;
+  display: flex;
   flex-direction: column-reverse;
   gap: 1rem;
   padding-top: 15px;
@@ -665,11 +643,10 @@ button:hover {
 .a-accept {
   text-decoration: none;
   color: #18142c;
-  
 }
 
 .a-accept:hover {
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   color: #18142c;
   font-weight: 550;
 }
@@ -678,11 +655,8 @@ input[type="checkbox"] {
   width: 20px;
   height: 20px;
   align-self: center;
-  
+  margin-top: 15px;
 }
-
-
-
 
 .please-find {
   font-size: 2rem;
@@ -718,7 +692,6 @@ input[type="checkbox"] {
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
-  
 }
 
 .linkedin-link:hover,
