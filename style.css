@@ -47,8 +47,7 @@ h1 {
   padding: 12px 37px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #283966;
-  margin-top: 25px;
-  width: 130px;
+  margin-top: 15px;
 }
 
 .btn:hover {
@@ -80,7 +79,7 @@ h1 {
   }
 
   .cv-button {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .name {
@@ -100,7 +99,7 @@ h1 {
 
   .flex-item-1 {
     position: absolute;
-    top: 120px;
+    top: 140px;
     left: 30px;
   }
 
@@ -127,6 +126,9 @@ h1 {
 
   .cv-button {
     margin-top: 30px;
+  }
+  .btn {
+    width: 130px;
   }
 }
 
@@ -161,13 +163,13 @@ h1 {
 
   .flex-item-1 {
     position: absolute;
-    top: 120px;
+    top: 140px;
     left: 60px;
   }
 
   .flex-item-2 {
     position: absolute;
-    top: 120px;
+    top: 140px;
     right: 60px;
   }
 
@@ -185,19 +187,22 @@ h1 {
 
   .flex-item-1 {
     position: absolute;
-    top: 65px;
+    top: 75px;
     left: 65px;
   }
 
   .flex-item-2 {
     position: absolute;
-    top: 65px;
+    top: 75px;
     right: 65px;
   }
 
   .left-cloud,
   .right-cloud,
   .interface {
+    width: 200px;
+  }
+  .btn {
     width: 200px;
   }
 }
@@ -550,6 +555,7 @@ h1 {
 
 .get-in {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -697,4 +703,83 @@ input[type="checkbox"] {
   background-color: #476e9e;
   color: #18142c;
   font-weight: 550;
+}
+
+@media (min-width: 768px) {
+  .get-in-touch {
+    font-size: 3rem;
+  }
+  .if-you-think,
+  .please-find {
+    font-size: 2.5rem;
+  }
+  .linkedin-link,
+  .github-link,
+  .website-link {
+    font-size: 2.5rem;
+  }
+  .main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+  }
+  .links {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 992px) {
+  .flex-2-container {
+    margin-left: 10px;
+  }
+  a.btn {
+    font-size: 2.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-2-container {
+    margin-left: 20px;
+  }
+  .flex-3-container {
+    margin-right: 20px;
+    gap: 1rem;
+  }
+  .get-in-touch {
+    font-size: 4rem;
+  }
+  .if-you-think,
+  .please-find {
+    font-size: 3rem;
+  }
+  .linkedin-link,
+  .github-link,
+  .website-link {
+    font-size: 3rem;
+  }
+
+  input::placeholder {
+    font-size: 1.3em;
+  }
+
+  textarea::placeholder {
+    font-size: 1.7em;
+  }
+
+  .message {
+    font-size: 3em;
+  }
+
+  a.a-accept {
+    font-size: 1.2em;
+  }
+  a.btn {
+    font-size: 4rem;
+  }
+
+  .btn-low {
+    font-size: 3rem;
+  }
 }
