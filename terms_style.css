@@ -41,15 +41,22 @@
     margin-bottom: 10px;
   }
   
-  .terms-link, .back-to {
+  a {
     color: #007bff;
     text-decoration: none;
   }
   
-  .terms-link:hover, .back-to:hover {
+  a:hover {
     background-color: whitesmoke;
   color: #18142c;
   font-weight: 550;
+  }
+  .back-to {
+    margin-top: 30px;
+  }
+
+  .fa-solid {
+    margin: 5px;
   }
 
   

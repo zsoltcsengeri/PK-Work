@@ -645,12 +645,14 @@ input::placeholder {
 .a-accept {
   text-decoration: none;
   color: #18142c;
+  
 }
 
 .a-accept:hover {
   background-color: whitesmoke;
   color: #18142c;
   font-weight: 550;
+ 
 }
 
 input[type="checkbox"] {
