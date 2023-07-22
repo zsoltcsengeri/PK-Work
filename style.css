@@ -22,8 +22,7 @@ h1 {
   text-align: center;
   padding-top: 15px;
   font-size: 2.5rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
-    Arial;
+  font-family: 'Poppins', serif;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -43,7 +42,7 @@ h1 {
   cursor: pointer;
   color: whitesmoke;
   font-weight: 500;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Poppins', serif;
   font-size: 2.5rem;
   padding: 12px 37px;
   text-decoration: none;
@@ -219,8 +218,7 @@ h1 {
   align-items: center;
   font-size: 3rem;
   
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
-    Arial;
+  font-family: 'Poppins', serif;
   padding: 25px;
   margin: 25px;
   box-shadow: 0 2px 5px #f5f5f5;
@@ -234,9 +232,9 @@ h1 {
   line-height: 1.5;
   text-align: justify;
   text-align-last: center;
-  word-spacing: -0.01em;
-  letter-spacing: -0.01em;
-  font-weight: 540;
+  word-spacing: -0.05em;
+  letter-spacing: -0.05em;
+  font-weight: 500;
 }
 
 .I-am {
@@ -290,8 +288,7 @@ h1 {
   align-items: center;
   text-align: center;
   font-size: 3rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
-    Arial;
+  font-family: 'Poppins', serif;
   font-weight: 600;
 }
 
@@ -342,38 +339,34 @@ h1 {
 
 .strong-it {
   font-size: 2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
-    Arial;
+  font-family: 'Poppins', serif;
   font-weight: 600;
   padding-bottom: 5px;
 }
 
 .critically {
   font-size: 1.8rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
-    Arial;
-  font-weight: 540;
+  font-family: 'Poppins', serif;
+  font-weight: 500;
   text-align: justify;
-  word-spacing: -0.01em;
-  letter-spacing: -0.01em;
+  word-spacing: -0.05em;
+  letter-spacing: -0.05em;
 }
 
 .system-level {
   font-size: 2rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
-    Arial;
+  font-family: 'Poppins', serif;
   font-weight: 600;
   padding-bottom: 5px;
 }
 
 .with {
   font-size: 1.8rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
-    Arial;
-  font-weight: 540;
+  font-family: 'Poppins', serif;
+  font-weight: 500;
   text-align: justify;
-  word-spacing: -0.01em;
-  letter-spacing: -0.01em;
+  word-spacing: -0.05em;
+  letter-spacing: -0.05em;
 }
 
 @media (min-width: 600px) {
@@ -533,7 +526,7 @@ h1 {
   justify-content: center;
   text-align: center;
   margin-top: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Poppins', serif;
 }
 
 .section-4-container form {
@@ -569,6 +562,7 @@ h1 {
 .if-you-think {
   font-size: 2rem;
   padding-bottom: 10px;
+  margin: 5px 15px 5px;
 }
 
 label {
@@ -617,7 +611,7 @@ input::placeholder {
   cursor: pointer;
   color: whitesmoke;
   font-weight: 500;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Poppins', serif;
   font-size: 2.5rem;
   padding: 12px 37px;
   text-decoration: none;
@@ -666,7 +660,7 @@ input[type="checkbox"] {
   font-size: 2rem;
   font-weight: 550;
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Poppins', serif;
 }
 
 .links {
@@ -681,8 +675,7 @@ input[type="checkbox"] {
   gap: 2px;
   margin-top: 20px;
   padding: 20px 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Poppins', serif;
 }
 
 .linkedin-link,
