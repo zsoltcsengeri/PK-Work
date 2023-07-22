@@ -50,6 +50,8 @@ The submitted details are stored in a MySQL database, which allows for organized
 `username: user`
 `password: PKuser`
 
+![Alt text](image.png)
+
 Please note that this database contains only dummy data for testing and demonstration purposes. It's always recommended to secure your database credentials and not expose them publicly in a real-world project scenario.
 
 ##License
