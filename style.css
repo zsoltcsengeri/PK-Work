@@ -761,22 +761,22 @@ input[type="checkbox"] {
   }
 
   input::placeholder {
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
 
   textarea::placeholder {
-    font-size: 1.7em;
+    font-size: 1.7rem;
   }
 
   .message {
-    font-size: 3em;
+    font-size: 3rem;
   }
 
   a.a-accept {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
   a.btn {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .btn-low {
