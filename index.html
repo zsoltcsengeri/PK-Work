@@ -1,12 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Programozaskarrier
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zsolt Csengeri</title>
+    <!--CSS Link-->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--Font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <!--Section 1-->
+    <!--*Name, Downloadable CV, Role title, 3 Images (2 cloud and 1 interface images) -->
+
+    <main>
+      <div class="flex-container">
+        <h1 class="name">Zsolt Csengeri</h1>
+
+        <div class="cv-button">
+          <a href="./CV/Zsolt_Resume.pdf" class="btn" target="_blank">CV</a>
+        </div>
+        <div class="role-title">
+          <h2 class="imp-cons">Implementation Consultant</h2>
+          <div class="flex-item-1">
+            <img
+              class="left-cloud"
+              src="./images/circle-cropped-cloud.png"
+              alt="cloud"
+            />
+          </div>
+          <div class="flex-item-2">
+            <img
+              class="right-cloud"
+              src="./images/circle-cropped-cloud.png"
+              alt="cloud"
+            />
+          </div>
+          <div class="flex-item-3">
+            <img
+              class="interface"
+              src="./images/interface.png"
+              alt="interface"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--Section 2-->
+      <!--*Image of Me, 'I am' text -->
+
+      <div class="section-2-container">
+        <img class="Zsolt" src="./images/circle-cropped-dark.png" alt="Zsolt" />
+
+        <h2 class="I-am">I am</h2>
+
+        <div class="in-charge">
+          <p>
+            In charge of defining, configuring, and testing the solution with
+            proactive liaison with client teams to provide regular updates and
+            reports on project status, outstanding tasks and agreed timelines,
+            while keeping project deliverables on track.
+          </p>
+        </div>
+      </div>
+
+      <!--Section 3-->
+      <!--*2 Circle data images, 'My Skills' text -->
+      <div id="section-3" class="section-3">
+        <div class="section-3-container">
+          <div class="my-skills">
+            <h2 class="my-skills">My Skills</h2>
+          </div>
+          <div class="flex-2-container">
+            <div class="left-circle-img">
+              <img
+                class="left-circle-img"
+                src="./images/circle-cropped.png"
+                alt="Data Flow"
+              />
+            </div>
+            <div class="text-container">
+              <div class="strong-it">
+                <h3 class="strong-it">Strong IT Support-Solution Expertise</h3>
+              </div>
+              <div class="critically">
+                <p class="critically">
+                  Critically addressing business needs through a client-centric
+                  approach with minimum delivery risk and end-to-end management
+                  of project priorities and solutions across multi-lingual,
+                  geographical domains.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-3-container">
+            <div class="right-circle-img">
+              <img
+                class="right-circle-img"
+                src="./images/circle-cropped.png"
+                alt="Data Flow"
+              />
+            </div>
+            <div class="text-container-2">
+              <div class="system-level">
+                <h3 class="system-level">System-level Perspective</h3>
+              </div>
+              <div class="with">
+                <p class="with">
+                  With a 'big picture' view, tactfully planning strategic
+                  initiatives with robust implementation, engagement, reporting
+                  structures and resilient project control that sets the
+                  foundation for smarter processes and insights.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--Footer-->
+    <!--*'Get in touch' text, Contact email CTA, Social Media Icons-->
+    <footer>
+      <section id="section-4" class="section-4">
+        <div class="section-4-container">
+          <div class="get-in">
+            <h2 class="get-in-touch">Get In Touch</h2>
+            <h3 class="if-you-think">
+              If you think I’d be a good fit for your team, drop me a line and
+              let’s meet
+            </h3>
+          </div>
+
+          <div class="main-block">
+            <!-- form submission data transfers to a MYSQL DB via a locally hosted server -->
+            <form action="http://localhost:3000/process_form" method="POST">
+              <div class="info">
+                <input
+                  class="fname"
+                  type="text"
+                  name="full_name"
+                  placeholder="Full name"
+                />
+                <input type="text" name="email" placeholder="Email" />
+                <input
+                  type="text"
+                  name="phone_number"
+                  placeholder="Phone number"
+                />
+                <input type="text" name="web_site" placeholder="Web Site" />
+              </div>
+              <p class="message">Message</p>
+              <div class="text">
+                <textarea
+                  rows="4"
+                  name="message"
+                  placeholder="message..."
+                ></textarea>
+              </div>
+              <label class="accept">
+                <input type="checkbox" name="terms" required />
+                <a
+                  class="a-accept"
+                  href="./terms_conditions.html"
+                  target="_blank"
+                  >Read the terms &amp; conditions</a
+                >
+              </label>
+              <button class="btn-low" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <p class="please-find">
+        Please find below my availabilities and references
+      </p>
+      <div class="links">
+        <a
+          href="https://www.linkedin.com/in/zsolt-csengeri"
+          target="_blank"
+          class="linkedin-link"
+          >LinkedIn<i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/zsoltcsengeri"
+          target="_blank"
+          class="github-link"
+          >GitHub<i class="fa-brands fa-github-alt"></i
+        ></a>
+        <a href="https://mapp.com" target="_blank" class="website-link"
+          >Web Site<i class="fa-solid fa-globe"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./CV/server.js"></script>
+  </body>
 </html>
