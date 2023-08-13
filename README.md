@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> bf13feea49a0e858d8462683976f7f047d7bf993
 # Zsolt Csengeri's Portfolio and Contact Website
 
 This project is a personal portfolio website developed by Zsolt Csengeri. It's aimed at showcasing my skills, experience, and providing my contact information. This platform offers an interactive way for potential clients or employers to get to know more about my work and get in touch.
@@ -61,10 +57,3 @@ Please note that this database contains only dummy data for testing and demonstr
 
 ## License
 This project is open source and available under the [MIT License](docs/LICENSE).
-<<<<<<< HEAD
-=======
-# PK-Work
-This is for PK
->>>>>>> 19d1a0be07ae38d5085ae125aacdbd4d1d18906f
-=======
->>>>>>> bf13feea49a0e858d8462683976f7f047d7bf993
