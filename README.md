@@ -56,4 +56,4 @@ The submitted details are stored in a MySQL database, which allows for organized
 Please note that this database contains only dummy data for testing and demonstration purposes. It's always recommended to secure your database credentials and not expose them publicly in a real-world project scenario.
 
 ## License
-This project is open source and available under the [MIT License](docs/LICENSE).
+This project is open source and available under the [LICENSE](docs/LICENSE).
