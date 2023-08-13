@@ -10,7 +10,7 @@ This project is a personal portfolio website developed by Zsolt Csengeri. It's a
 Visit the live demo of the website at https://zsoltcsengeri.github.io/PK-Work/.
 
 ## Motivation
-The primary motivation for this project was to have a central hub where I could direct individuals interested in my work. It offers a detailed view of my skills, experience, and provides a form for quick and easy communication.
+The primary motivation behind this project was to create a central hub for individuals interested in my work. It provides a comprehensive overview of my skills and experiences, and also features a form for quick and easy communication.
 
 ## Technologies
 This project is created with:
