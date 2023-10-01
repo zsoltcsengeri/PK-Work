@@ -22,7 +22,7 @@ This project is created with:
 The website includes the following features:
 
 A **Contact Form** where visitors can submit their details. These details (full name, phone number, email, website, and the text message) are stored in a **MySQL** database for future reference.
-An **Updated CV** available to read and download by clicking on the CV button.
+An **Updated CV** available to read and download by clicking on the **CV button**.
 A **Terms and Conditions** page that users must agree to by ticking a checkbox before they can submit their details.
 ## Getting Started
 Clone the repository to your local machine, then follow the instructions below.
