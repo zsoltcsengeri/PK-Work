@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 // Create a MySQL connection pool
 const pool = mysql.createPool({
-  host: 'localhost',
+  host: 'frail-gray-undershirt.cyclic.cloud',
   user: 'root',
   password: 'ProgramozasKarrier2023',
   database: 'db1',
@@ -52,5 +52,5 @@ app.use((req, res, next) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`Server running on https://difficult-fish-waders.cyclic.cloud:${port}`);
 });
