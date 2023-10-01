@@ -11,11 +11,13 @@ The primary motivation behind this project was to create a central hub for indiv
 ## Technologies
 This project is created with:
 
-HTML5
-CSS3
-Node.js
-MySQL
-Features
+* HTML5
+* CSS3
+* Node.js
+* MySQL
+  
+##Features
+  
 
 The website includes the following features:
 
@@ -48,8 +50,9 @@ Now, you can visit **localhost:3000** in your browser to view the website.
 The submitted details are stored in a MySQL database, which allows for organized storage and easy retrieval of the contact details. For the purpose of demonstration and learning, you can access the database using the following credentials:
 
 
-`username: user`
-`password: PKuser`
+`Username: user`
+
+`Password: PKuser`
 
 ![Alt text](image.png)
 
