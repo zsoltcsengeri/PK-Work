@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const app = express();
 const port = 3000;
+const host = '0.0.0.0';
 
 
 // Configure body-parser middleware
@@ -51,6 +52,6 @@ app.use((req, res, next) => {
 });
 
 // Start the server
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Server running on http://localhost:${port}`);
+app.listen(port, host, () => {
+  console.log(`Server is running on http://${host}:${port}`);
 });
