@@ -7,7 +7,7 @@
   
 
   body {
-    background-color: red;
+    
     font-family: Arial, sans-serif;
     line-height: 1.4;
     margin: 0;
@@ -18,10 +18,16 @@
     word-spacing: -0.05em;
     font-weight: 500;
   }
+
+  
   
   .container {
     background-color: #f8f8f8;
     padding: 20px;
+  }
+  
+  .dark-mode {
+    background-color: grey;
   }
   
   .terms-heading {
@@ -100,6 +106,8 @@
     -webkit-transition: .4s;
     transition: .4s;
   }
+
+  
   
   input:checked + .slider {
     background-color: #2196F3;
