@@ -8,6 +8,21 @@
     <!--CSS Link-->
     <link rel="stylesheet" href="./style.css" />
 
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5Z7GGRSM");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!--Font awesome-->
     <link
       rel="stylesheet"
@@ -26,10 +41,21 @@
     />
 
     <!-- Favicon -->
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5Z7GGRSM"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!--Section 1-->
     <!--*Name, Downloadable CV, Role title, 3 Images (2 cloud and 1 interface images) -->
 
@@ -155,7 +181,10 @@
 
           <div class="main-block">
             <!-- form submission data transfers to a MYSQL DB via a locally hosted server -->
-            <form action="http://16.171.198.151:3000/process_form" method="POST">
+            <form
+              action="http://16.171.198.151:3000/process_form"
+              method="POST"
+            >
               <div class="info">
                 <input
                   class="fname"
