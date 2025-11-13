@@ -23,17 +23,20 @@
     </script>
     <!-- End Google Tag Manager -->
 
- <!-- MAPP SmartPixel -->
+    <!-- MAPP SmartPixel -->
     <script>
-    window.loaderConfig_ = {
-      trackId: '126771168695064',
-      domain: 'demovitaliidzoma01.wt-eu02.net',
-    };
-  </script>
+      window.loaderConfig_ = {
+        trackId: "126771168695064",
+        domain: "demovitaliidzoma01.wt-eu02.net",
+      };
+    </script>
 
-  <script async src="https://demovitaliidzoma01.wt-eu02.net/js/latest/smart-pixel.min.js"></script>
+    <script
+      async
+      src="https://demovitaliidzoma01.wt-eu02.net/js/latest/smart-pixel.min.js"
+    ></script>
 
-  <!-- End MAPP SmartPixel -->
+    <!-- End MAPP SmartPixel -->
 
     <!--Font awesome-->
     <link
@@ -192,45 +195,60 @@
           </div>
 
           <div class="main-block">
-            <!-- form submission data transfers to a MYSQL DB via a locally hosted server -->
-            <form
-              action="https://16.171.198.151:3000/process_form"
-              method="POST"
-            >
-              <div class="info">
-                <input
-                  class="fname"
-                  type="text"
-                  name="full_name"
-                  placeholder="Name"
-                />
-                <input type="text" name="email" placeholder="Email" />
-                <input
-                  type="text"
-                  name="phone_number"
-                  placeholder="Phone number"
-                />
-                <input type="text" name="web_site" placeholder="Web Site" />
-              </div>
-              <p class="message">Message</p>
-              <div class="text">
-                <textarea
-                  rows="4"
-                  name="message"
-                  placeholder="message..."
-                ></textarea>
-              </div>
-              <label class="accept">
-                <input type="checkbox" name="terms" required />
-                <a
-                  class="a-accept"
-                  href="./terms_conditions.html"
-                  target="_blank"
-                  >Read the terms &amp; conditions</a
-                >
-              </label>
-              <button class="btn-low" type="submit">Submit</button>
-            </form>
+            <!-- form submission data transfers to a PostgreSQL DB via FastAPI -->
+            <div class="main-block">
+              <form id="contactForm">
+                <div class="info">
+                  <input
+                    class="fname"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone number"
+                  />
+                  <input
+                    type="url"
+                    id="website"
+                    name="website"
+                    placeholder="Web Site"
+                  />
+                </div>
+                <p class="message">Message</p>
+                <div class="text">
+                  <textarea
+                    rows="4"
+                    id="message"
+                    name="message"
+                    placeholder="message..."
+                    required
+                  ></textarea>
+                </div>
+                <label class="accept">
+                  <input type="checkbox" name="terms" id="terms" required />
+                  <a
+                    class="a-accept"
+                    href="./terms_conditions.html"
+                    target="_blank"
+                    >Read the terms &amp; conditions</a
+                  >
+                </label>
+                <button class="btn-low" type="submit">Submit</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -257,6 +275,5 @@
       </div>
     </footer>
     <script src="./script.js"></script>
-    <script src="./server.js"></script>
   </body>
 </html>

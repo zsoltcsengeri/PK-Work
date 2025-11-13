@@ -1,0 +1,5 @@
+fastapi # Web framework for building APIs
+uvicorn # ASGI server for FastAPI
+sqlalchemy # SQL toolkit and ORM
+psycopg2-binary # PostgreSQL adapter for Python
+pydantic # Data validation and settings management

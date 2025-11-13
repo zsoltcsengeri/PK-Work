@@ -1,62 +1,157 @@
-# Zsolt Csengeri's Portfolio and Contact Website
+# 🧠 Zsolt Csengeri — FastAPI + PostgreSQL + Nginx Deployment Project
 
-This project is a personal portfolio website developed by Zsolt Csengeri. It's aimed at showcasing my skills, experience, and providing my contact information. This platform offers an interactive way for potential clients or employers to get to know more about my work and get in touch.
+## 🌍 Live Demo
+| Environment | URL |
+|--------------|-----|
+| **Frontend (Website)** | https://zsolt-csengeri.com |
+| **Backend (API Endpoint)** | https://api.zsolt-csengeri.com/contacts |
 
-## Live Demo
-Visit the live demo of the website at https://zsoltcsengeri.github.io/PK-Work/.
+---
 
-## Motivation
-The primary motivation behind this project was to create a central hub for individuals interested in my work. It provides a comprehensive overview of my skills and experiences, and also features a form for quick and easy communication.
+## 🧩 Overview
+This is a **fully deployed full-stack web application** demonstrating how to build, connect, and serve a FastAPI backend and PostgreSQL database behind a secure Nginx reverse proxy with valid SSL certificates.
 
-## Technologies
-This project is created with:
+The project runs on **DigitalOcean**, uses a **custom domain** from Namecheap, and includes a production-ready folder structure.
 
-* HTML5
-* CSS3
-* Node.js
-* MySQL
-  
-## Features
-  
+---
 
-The website includes the following features:
+## 🏗️ Architecture
+```
+/fastapi-app
+├── backend/
+│   ├── main.py          # FastAPI app entrypoint
+│   ├── database.py      # PostgreSQL connection via SQLAlchemy
+│   ├── models.py        # ORM model(s)
+│   ├── requirements.txt # Dependencies
+│
+├── frontend/
+│   ├── index.html       # Frontend UI
+│   ├── script.js        # Handles API POST requests to backend
+│   ├── style.css        # Layout and design
+│   ├── CV/              # Static assets (CV PDF)
+│
+└── venv/                # Python virtual environment
+```
+---
 
-A **Contact Form** where visitors can submit their details. These details (full name, phone number, email, website, and the text message) are stored in a **MySQL** database for future reference.
-An **Updated CV** available to read and download by clicking on the **CV button**.
-A **Terms and Conditions** page that users must agree to by ticking a checkbox before they can submit their details.
-## Getting Started
-Clone the repository to your local machine, then follow the instructions below.
+## ⚙️ Tech Stack
+| Layer | Technology |
+|--------|-------------|
+| **Frontend** | HTML5, CSS3, JavaScript |
+| **Backend** | FastAPI, Uvicorn |
+| **Database** | PostgreSQL |
+| **Web Server / Proxy** | Nginx |
+| **SSL & HTTPS** | Let’s Encrypt + Certbot |
+| **Hosting** | DigitalOcean Droplet (Ubuntu) |
+| **Domain** | Namecheap (DNS: A & CNAME records) |
 
-## Prerequisites
-To run this project, you'll need Node.js installed on your computer. You can download it from [here](https://nodejs.org/en).
+---
 
-You'll also need a MySQL server running.
+## 🚀 Deployment Steps (Summary)
 
-## Installation
-After installing the prerequisites, navigate to the project directory and run the following command to install the required dependencies:
+1. **Provision Ubuntu Droplet**
+```bash
+ssh root@<server_ip>
+sudo apt update && sudo apt upgrade -y
+```
 
-`npm install`
+2. **Install core services**
+```bash
+sudo apt install python3 python3-venv python3-pip nginx postgresql -y
+```
 
+3. **Setup FastAPI backend**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r backend/requirements.txt
+# (or) pip install fastapi uvicorn sqlalchemy psycopg2-binary pydantic[email]
+```
 
-## Usage
-To start the server, run the following command in the terminal:
+4. **Configure PostgreSQL**
+```bash
+sudo -i -u postgres
+psql
+CREATE DATABASE cv_site;
+CREATE USER cv_app_user WITH PASSWORD 'menzoberanzan';
+GRANT ALL PRIVILEGES ON DATABASE cv_site TO cv_app_user;
+\\q
+exit
+```
 
+5. **Run locally for testing**
+```bash
+uvicorn backend.main:app --reload
+```
 
-`node server.js`
+6. **Setup Nginx for reverse proxy + SSL**
+- Create `/etc/nginx/sites-available/zsolt-csengeri.com`
+- Link & test:
+```bash
+sudo ln -s /etc/nginx/sites-available/zsolt-csengeri.com /etc/nginx/sites-enabled/
+sudo nginx -t && sudo systemctl reload nginx
+```
+- Issue certificates:
+```bash
+sudo certbot --nginx -d zsolt-csengeri.com -d www.zsolt-csengeri.com
+```
 
-Now, you can visit **localhost:3000** in your browser to view the website.
+7. **Fix permission issue (if 500)**
+```bash
+sudo chmod o+x /home/zsolt
+sudo chown -R www-data:www-data /home/zsolt/fastapi-app/frontend
+sudo systemctl reload nginx
+```
 
-## Database Access
-The submitted details are stored in a MySQL database, which allows for organized storage and easy retrieval of the contact details. For the purpose of demonstration and learning, you can access the database using the following credentials:
+---
 
+## ✅ Test Scenarios
 
-`Username: user`
+| Test | URL / Result |
+|------|---------------|
+| 🖥️ Frontend loaded successfully | `https://zsolt-csengeri.com` |
+| 📨 Form submission | Sends data to `https://api.zsolt-csengeri.com/contacts` |
+| 📊 Database insert | Verified in PostgreSQL with `SELECT * FROM contacts;` |
+| 🔒 SSL certificates | Issued by Let’s Encrypt (auto-renew enabled) |
 
-`Password: PKuser`
+---
 
-![Alt text](image.png)
+## 🧾 Common Errors & Fixes
 
-Please note that this database contains only dummy data for testing and demonstration purposes. It's always recommended to secure your database credentials and not expose them publicly in a real-world project scenario.
+| Error | Cause | Fix |
+|--------|--------|-----|
+| `404 Not Found` | Wrong root path or missing index.html | Check Nginx `root` path |
+| `500 Internal Server Error` | File permission denied | `sudo chmod o+x /home/zsolt` and `chown` frontend to `www-data` |
+| `ERR_SSL_PROTOCOL_ERROR` | SSL not configured | Run `sudo certbot --nginx ...` |
+| `Invalid response from /.well-known/acme-challenge` | DNS not propagated | Wait or verify A records point to droplet IP |
+| `Permission denied to /frontend/index.html` | Nginx user lacks access | `sudo chown -R www-data` |
 
-## License
-This project is open source and available under the [LICENSE](docs/LICENSE).
+---
+
+## 🧰 Useful Commands
+
+```bash
+# Restart Nginx
+sudo systemctl reload nginx
+
+# Check logs
+sudo tail -n 50 /var/log/nginx/error.log
+
+# Check FastAPI logs (systemd)
+sudo journalctl -u fastapi -n 50
+
+# PostgreSQL access
+sudo -i -u postgres
+psql
+\\c cv_site
+SELECT * FROM contacts;
+\\q
+```
+
+---
+
+## 📖 Author
+**Zsolt Csengeri**  
+Solution Engineer • Python & Linux • Cloud & DevOps  
+📧 zsoltcsengeri@yahoo.com  
+🌐 https://zsolt-csengeri.com
